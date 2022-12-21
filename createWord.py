@@ -9,10 +9,8 @@ arr = ['e','o','b', 'a','m','g', 'l', 'y']
 
 for i in dict:
 	s = ''
-	c = 0
-	for j in range(len(i)):		
-		if (i[c] in arr):
-			s = s + i[c]
-			c +=1
-	if (s in dict):
-		print(s)
+	for j in i:
+	    if j not in arr:
+		    break
+	else:
+	    print(i)
